@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a (_really_) simple video renting, with a _REST-ish_ API, made in Java. The back-end uses an [H2 database](http://www.h2database.com/html/main.html) behind to store the customers, films and rentals. Moreover, [Hibernate](http://hibernate.org/) is used to communicate with the database. The _seed_ data is available in the file ``Seed.java`.
+This is a (_really_) simple video renting, with a _REST-ish_ API, made in Java. The back-end uses an [H2 database](http://www.h2database.com/html/main.html) behind to store the customers, films and rentals. Moreover, [Hibernate](http://hibernate.org/) is used to communicate with the database. The _seed_ data is available in the [seed](https://github.com/joaoqalves/netfreaks/blob/master/src/main/java/net/joaoqalves/Seed.java) file.
 
 ## Design Assumptions
 
@@ -24,8 +24,8 @@ The following resources are available:
 
 + ``GET /customers``
 + ``GET /customers/{id}``
-+ ``POST /customers/{id}/rent``, to rent one or more films
-+ ``POST /customers/{id}/return``, to return one or more films
++ ``POST /customers/{id}/rent``, to rent one or more films. The payload should be a JSON list that contains elements of [NewRental](https://github.com/joaoqalves/netfreaks/blob/master/src/main/java/net/joaoqalves/domain/rental/NewRental.java)
++ ``POST /customers/{id}/return``, to return one or more films. The payload should be a JSON list that contains elements of [NewReturn](https://github.com/joaoqalves/netfreaks/blob/master/src/main/java/net/joaoqalves/domain/returnfilm/NewReturn.java)
 + ``GET /films``
 + ``GET /films/{id}``
 + ``GET /rentals``
