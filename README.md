@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a (_really_) simple video renting, with a _REST-ish_ API, made in Java. The back-end uses an [H2 database](http://www.h2database.com/html/main.html) behind to store the customers, films and rentals. Moreover, [Hibernate](http://hibernate.org/) is used to communicate with the database.
+This is a (_really_) simple video renting, with a _REST-ish_ API, made in Java. The back-end uses an [H2 database](http://www.h2database.com/html/main.html) behind to store the customers, films and rentals. Moreover, [Hibernate](http://hibernate.org/) is used to communicate with the database. The _seed_ data is available in the file ``Seed.java`.
 
 ## Design Assumptions
 
