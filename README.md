@@ -14,9 +14,6 @@ This is a (_really_) simple video renting, with a _REST-ish_ API, made in Java. 
 + No logging
 + No concurrency handling when getting the films (what happens if the last copy was rented just before?)
 
-## Application demo
-
-There is an example application demo available <a href="http://goo.gl/n8dcrg" target="_blank">here</a>.
 
 ### Available resources
 
